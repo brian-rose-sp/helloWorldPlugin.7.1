@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE Policy PUBLIC "sailpoint.dtd" "sailpoint.dtd">
-<Policy certificationActions="Mitigated,Delegated" configPage="genericpolicy.xhtml"  executor="sailpoint.plugin.helloWorld.policy.HelloWorldPolicyExecutor"
+<Policy certificationActions="Mitigated,Delegated" configPage="genericpolicy.xhtml"  executor="sailpoint.plugin.helloworld.policy.HelloWorldPolicyExecutor"
         name="SOD Matrix" state="Active" type="Advanced" typeKey="policy_type_advanced" violationOwnerType="Manager">
     <Attributes>
         <Map>

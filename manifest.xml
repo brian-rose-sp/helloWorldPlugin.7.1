@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE sailpoint PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<!DOCTYPE Plugin PUBLIC "sailpoint.dtd" "sailpoint.dtd">
 <Plugin certificationLevel="None" displayName="Hello World" minSystemVersion="7.1" name="HellowWorld" version="1.0" rightRequired="HelloWorldPluginRight">
     <Attributes>
         <Map>

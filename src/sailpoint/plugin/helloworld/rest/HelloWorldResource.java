@@ -2,19 +2,15 @@ package sailpoint.plugin.helloworld.rest;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
-import sailpoint.object.Attributes;
-import sailpoint.plugin.common.PluginRegistry;
 import sailpoint.plugin.helloworld.service.HelloWorld;
 import sailpoint.plugin.helloworld.service.HelloWorldService;
 import sailpoint.plugin.helloworld.util.HelloWorldUtil;
-import sailpoint.plugin.rest.jaxrs.AllowAll;
 import sailpoint.rest.plugin.BasePluginResource;
+import sailpoint.rest.plugin.AllowAll;
 import sailpoint.rest.plugin.Deferred;
 import sailpoint.rest.plugin.RequiredRight;
 import sailpoint.rest.plugin.SystemAdmin;
 import sailpoint.tools.GeneralException;
-import sailpoint.web.plugin.config.Plugin;
-
 
 /**
  * @author brian.rose

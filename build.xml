@@ -13,7 +13,7 @@
     <fileset dir="${iiq.home}/WEB-INF/lib">
       <include name="**/*.jar"/>
     </fileset>
-    <fileset dir="./web/jars" erroronmissingdir="false">
+    <fileset dir="./lib" erroronmissingdir="false">
       <include name="**/*.jar"/>
     </fileset>
   </path>
@@ -35,15 +35,19 @@
   </target>
 
   <target name="overlay" depends="compile" description="Output zip file overlay to build/dist dir">
-    <mkdir dir="${overlay}/jars"/>
-    <jar destfile="${overlay}/jars/helloworld.jar">
+    <mkdir dir="${overlay}/lib"/>
+    <jar destfile="${overlay}/lib/helloworld.jar">
       <fileset dir="build/classes">
         <include name="sailpoint/plugin/**"/>
-        <include name="sailpoint/web/**"/>
       </fileset>
     </jar>
     <copy todir="${overlay}">
-      <fileset dir="web"/>
+      <fileset dir=".">
+        <include name="ui/**"/>
+        <include name="db/**"/>
+        <include name="import/**"/>
+        <include name="manifest.xml"/>
+      </fileset>
     </copy>
     <zip basedir="${overlay}" destfile="build/dist/helloworld.${version}.zip"/>
   </target>
