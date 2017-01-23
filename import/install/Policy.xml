@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Policy PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Policy certificationActions="Mitigated,Delegated" configPage="genericpolicy.xhtml"  executor="sailpoint.plugin.helloWorld.policy.HelloWorldPolicyExecutor"
+        name="SOD Matrix" state="Active" type="Advanced" typeKey="policy_type_advanced" violationOwnerType="Manager">
+    <Attributes>
+        <Map>
+            <entry key='pluginName' value='HelloWorld'/>
+
+        </Map>
+    </Attributes>
+    <GenericConstraints>
+        <GenericConstraint name="SOD Matrix Constraint" violationOwnerType="Manager">
+            <CompensatingControl>Do Something</CompensatingControl>
+        </GenericConstraint>
+    </GenericConstraints>
+    <Owner>
+        <Reference class="sailpoint.object.Identity" name="spadmin"/>
+    </Owner>
+    <ViolationOwner>
+        <Reference class="sailpoint.object.Identity" name="spadmin"/>
+    </ViolationOwner>
+</Policy>

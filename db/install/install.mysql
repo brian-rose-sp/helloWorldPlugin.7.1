@@ -1,0 +1,5 @@
+CREATE  TABLE helloworld_table (
+  user_id INT NOT NULL,
+  message varchar(1024).
+  PRIMARY KEY (user_id)
+) ENGINE=InnoDB;

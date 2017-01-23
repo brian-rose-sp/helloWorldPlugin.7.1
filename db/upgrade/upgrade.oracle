@@ -1,0 +1,7 @@
+
+--
+-- Oracle DDL plugin script
+--
+
+ALTER TABLE helloworld_table ADD name varchar2(255 char);
+

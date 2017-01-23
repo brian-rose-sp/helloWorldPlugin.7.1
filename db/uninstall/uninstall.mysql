@@ -1,0 +1,7 @@
+
+--
+-- MySQL DDL plugin script
+--
+
+DROP TABLE helloworld_table;
+

@@ -1,0 +1,9 @@
+
+--
+-- MS SQL Server DDL plugin script
+--
+
+ALTER TABLE helloworld_table ADD notes nvarchar(255) null
+GO
+
+

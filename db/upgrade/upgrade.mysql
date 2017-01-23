@@ -1,0 +1,7 @@
+
+--
+-- MySQL DDL plugin script
+--
+
+ALTER TABLE helloworld_table ADD name varchar(255);
+

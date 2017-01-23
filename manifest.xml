@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sailpoint PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Plugin certificationLevel="None" displayName="Hello World" minSystemVersion="7.1" name="HellowWorld" version="1.0" rightRequired="HelloWorldPluginRight">
+    <Attributes>
+        <Map>
+            <entry key="minUpgradableVersion" value="0.1" />
+            <entry key="fullPage">
+                <value>
+                    <FullPage title="Hello World" />
+                </value>
+            </entry>
+            <entry key="restResources">
+                <value>
+                    <List>
+                        <String>sailpoint.plugin.helloworld.rest.HelloWorldResource</String>
+                    </List>
+                </value>
+            </entry>
+            <entry key="settings">
+                <value>
+                    <List>
+                        <Setting dataType="string" helpText="The text to show on the full page" label="Default Message" name="defaultMessage" defaultValue="Hello World"/>
+                    </List>
+                </value>
+            </entry>
+            <entry key="serviceExecutors">
+                <value>
+                    <List>
+                        <String>sailpoint.plugin.helloworld.server.HelloWorldServiceExecutor</String>
+                    </List>
+                </value>
+            </entry>
+            <entry key="snippets">
+                <value>
+                    <List>
+                        <Snippet regexPattern=".*" rightRequired="HelloWorldPluginIconRight">
+                            <Scripts>
+                                <String>ui/js/headerInject.js</String>
+                            </Scripts>
+                            <StyleSheets>
+                                <String>ui/css/helloWorld.css</String>
+                            </StyleSheets>
+                        </Snippet>
+                    </List>
+                </value>
+            </entry>
+        </Map>
+    </Attributes>
+</Plugin>
